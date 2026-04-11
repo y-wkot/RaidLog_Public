@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Extensions.Configuration;
 using Supabase;
+using System.Reflection;
+using System.IO;
 
 // Supabase Auth利用によるIDとパスワード認証
 // PWはハッシュ化（暗号化）される。TLS1.2という暗号化プロトコルを使用して保護される。通信内容が盗聴されない。
@@ -28,14 +30,28 @@ namespace RaidLog
 
             try
             {
-                var config = new ConfigurationBuilder()
-                    .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-                    .AddJsonFile("appsettings.json")
-                    .Build();
+                // 実行中のアセンブリ（自分自身）を取得
+                var assembly = Assembly.GetExecutingAssembly();
 
-                // jsonの中身を取得して箱に入れる
-                supabaseUrl = config["Supabase:Url"];
-                supabaseKey = config["Supabase:Key"];
+                var resourceName = "RaidLog.appsettings.json";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                {
+                    if (stream == null)
+                    {
+                        // リソースが見つからない場合はエラーを投げる
+                        throw new FileNotFoundException($"リソース '{resourceName}' が見つかりません。プロパティで「埋め込みリソース」に設定されているか確認してください。");
+                    }
+
+                    // AddJsonStream を使って内蔵された json を読み込む
+                    var config = new ConfigurationBuilder()
+                        .AddJsonStream(stream)
+                        .Build();
+
+                    // jsonの中身を取得して箱に入れる
+                    supabaseUrl = config["Supabase:Url"];
+                    supabaseKey = config["Supabase:Key"];
+                }
             }
             catch (Exception ex)
             {
