@@ -1,2 +1,14 @@
+## [不要なフォルダ]
+.vs/
+[Bb]in/
+[Oo]bj/
+packages/
+
+## [設定ファイル]
 appsettings.json
-/obj/Debug
+
+## [その他一時ファイル]
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
