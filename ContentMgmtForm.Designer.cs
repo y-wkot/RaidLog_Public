@@ -73,7 +73,7 @@
             this.rdoRegist.Location = new System.Drawing.Point(12, 40);
             this.rdoRegist.Name = "rdoRegist";
             this.rdoRegist.Size = new System.Drawing.Size(127, 26);
-            this.rdoRegist.TabIndex = 3;
+            this.rdoRegist.TabIndex = 0;
             this.rdoRegist.TabStop = true;
             this.rdoRegist.Text = "登録・編集";
             this.rdoRegist.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@
             this.txtContentName.Location = new System.Drawing.Point(12, 120);
             this.txtContentName.Name = "txtContentName";
             this.txtContentName.Size = new System.Drawing.Size(412, 29);
-            this.txtContentName.TabIndex = 19;
+            this.txtContentName.TabIndex = 1;
             // 
             // lblPhaseName
             // 
@@ -113,7 +113,7 @@
             this.txtPhaseName.Location = new System.Drawing.Point(12, 202);
             this.txtPhaseName.Name = "txtPhaseName";
             this.txtPhaseName.Size = new System.Drawing.Size(412, 29);
-            this.txtPhaseName.TabIndex = 21;
+            this.txtPhaseName.TabIndex = 2;
             // 
             // lblDetailGimmick
             // 
@@ -131,7 +131,7 @@
             this.txtDetailGimmick.Location = new System.Drawing.Point(12, 286);
             this.txtDetailGimmick.Name = "txtDetailGimmick";
             this.txtDetailGimmick.Size = new System.Drawing.Size(412, 29);
-            this.txtDetailGimmick.TabIndex = 23;
+            this.txtDetailGimmick.TabIndex = 3;
             // 
             // lblDisplayOrder
             // 
@@ -149,7 +149,7 @@
             this.numDisplayOrder.Location = new System.Drawing.Point(12, 366);
             this.numDisplayOrder.Name = "numDisplayOrder";
             this.numDisplayOrder.Size = new System.Drawing.Size(75, 29);
-            this.numDisplayOrder.TabIndex = 27;
+            this.numDisplayOrder.TabIndex = 4;
             // 
             // btnExecute
             // 
@@ -157,7 +157,7 @@
             this.btnExecute.Location = new System.Drawing.Point(112, 616);
             this.btnExecute.Name = "btnExecute";
             this.btnExecute.Size = new System.Drawing.Size(215, 38);
-            this.btnExecute.TabIndex = 28;
+            this.btnExecute.TabIndex = 5;
             this.btnExecute.Text = "登録";
             this.btnExecute.UseVisualStyleBackColor = true;
             this.btnExecute.Click += new System.EventHandler(this.btnExecute_Click);
@@ -176,7 +176,7 @@
             this.btnBack.Location = new System.Drawing.Point(333, 12);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(103, 26);
-            this.btnBack.TabIndex = 30;
+            this.btnBack.TabIndex = 6;
             this.btnBack.Text = "戻る";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);

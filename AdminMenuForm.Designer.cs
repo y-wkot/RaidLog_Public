@@ -39,7 +39,7 @@
             this.btnContentMgmt.Location = new System.Drawing.Point(12, 12);
             this.btnContentMgmt.Name = "btnContentMgmt";
             this.btnContentMgmt.Size = new System.Drawing.Size(296, 61);
-            this.btnContentMgmt.TabIndex = 8;
+            this.btnContentMgmt.TabIndex = 0;
             this.btnContentMgmt.Text = "コンテンツマスタ管理";
             this.btnContentMgmt.UseVisualStyleBackColor = true;
             this.btnContentMgmt.Click += new System.EventHandler(this.btnContentMgmt_Click);
@@ -50,7 +50,7 @@
             this.btnJobMgmt.Location = new System.Drawing.Point(12, 79);
             this.btnJobMgmt.Name = "btnJobMgmt";
             this.btnJobMgmt.Size = new System.Drawing.Size(296, 61);
-            this.btnJobMgmt.TabIndex = 9;
+            this.btnJobMgmt.TabIndex = 1;
             this.btnJobMgmt.Text = "ジョブマスタ管理";
             this.btnJobMgmt.UseVisualStyleBackColor = true;
             this.btnJobMgmt.Click += new System.EventHandler(this.btnJobMgmt_Click);
@@ -60,7 +60,7 @@
             this.btnBack.Location = new System.Drawing.Point(12, 398);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(191, 40);
-            this.btnBack.TabIndex = 10;
+            this.btnBack.TabIndex = 2;
             this.btnBack.Text = "マイページへ戻る";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);

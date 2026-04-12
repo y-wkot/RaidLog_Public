@@ -62,7 +62,7 @@
             this.btnBack.Location = new System.Drawing.Point(385, 12);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(55, 26);
-            this.btnBack.TabIndex = 43;
+            this.btnBack.TabIndex = 6;
             this.btnBack.Text = "戻る";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -82,7 +82,7 @@
             this.btnExecute.Location = new System.Drawing.Point(116, 615);
             this.btnExecute.Name = "btnExecute";
             this.btnExecute.Size = new System.Drawing.Size(215, 38);
-            this.btnExecute.TabIndex = 41;
+            this.btnExecute.TabIndex = 5;
             this.btnExecute.Text = "登録";
             this.btnExecute.UseVisualStyleBackColor = true;
             this.btnExecute.Click += new System.EventHandler(this.btnExecute_Click);
@@ -93,7 +93,7 @@
             this.numDisplayOrder.Location = new System.Drawing.Point(16, 285);
             this.numDisplayOrder.Name = "numDisplayOrder";
             this.numDisplayOrder.Size = new System.Drawing.Size(75, 29);
-            this.numDisplayOrder.TabIndex = 40;
+            this.numDisplayOrder.TabIndex = 4;
             // 
             // lblDisplayOrder
             // 
@@ -121,7 +121,7 @@
             this.txtRoleName.Location = new System.Drawing.Point(16, 203);
             this.txtRoleName.Name = "txtRoleName";
             this.txtRoleName.Size = new System.Drawing.Size(412, 29);
-            this.txtRoleName.TabIndex = 35;
+            this.txtRoleName.TabIndex = 3;
             // 
             // lblJobName
             // 
@@ -139,7 +139,7 @@
             this.txtJobName.Location = new System.Drawing.Point(16, 121);
             this.txtJobName.Name = "txtJobName";
             this.txtJobName.Size = new System.Drawing.Size(412, 29);
-            this.txtJobName.TabIndex = 33;
+            this.txtJobName.TabIndex = 2;
             // 
             // rdoDelete
             // 
@@ -148,7 +148,7 @@
             this.rdoDelete.Location = new System.Drawing.Point(217, 41);
             this.rdoDelete.Name = "rdoDelete";
             this.rdoDelete.Size = new System.Drawing.Size(72, 26);
-            this.rdoDelete.TabIndex = 32;
+            this.rdoDelete.TabIndex = 1;
             this.rdoDelete.TabStop = true;
             this.rdoDelete.Text = "削除";
             this.rdoDelete.UseVisualStyleBackColor = true;
@@ -161,7 +161,7 @@
             this.rdoRegist.Location = new System.Drawing.Point(16, 41);
             this.rdoRegist.Name = "rdoRegist";
             this.rdoRegist.Size = new System.Drawing.Size(127, 26);
-            this.rdoRegist.TabIndex = 31;
+            this.rdoRegist.TabIndex = 0;
             this.rdoRegist.TabStop = true;
             this.rdoRegist.Text = "登録・編集";
             this.rdoRegist.UseVisualStyleBackColor = true;

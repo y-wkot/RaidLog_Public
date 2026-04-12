@@ -83,7 +83,7 @@
             // 
             this.calendarLog.Location = new System.Drawing.Point(12, 167);
             this.calendarLog.Name = "calendarLog";
-            this.calendarLog.TabIndex = 0;
+            this.calendarLog.TabIndex = 3;
             this.calendarLog.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.calendarLog_DateSelected);
             // 
             // rdoRegist
@@ -129,7 +129,7 @@
             this.btnLogout.Location = new System.Drawing.Point(1086, 27);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(121, 38);
-            this.btnLogout.TabIndex = 34;
+            this.btnLogout.TabIndex = 18;
             this.btnLogout.Text = "ログアウト";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -140,7 +140,7 @@
             this.btnExecute.Location = new System.Drawing.Point(992, 778);
             this.btnExecute.Name = "btnExecute";
             this.btnExecute.Size = new System.Drawing.Size(215, 38);
-            this.btnExecute.TabIndex = 33;
+            this.btnExecute.TabIndex = 16;
             this.btnExecute.Text = "登録";
             this.btnExecute.UseVisualStyleBackColor = true;
             this.btnExecute.Click += new System.EventHandler(this.btnExecute_Click);
@@ -151,7 +151,7 @@
             this.btnAdmin.Location = new System.Drawing.Point(12, 16);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(199, 61);
-            this.btnAdmin.TabIndex = 7;
+            this.btnAdmin.TabIndex = 0;
             this.btnAdmin.Text = "管理者用画面へ";
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
@@ -172,7 +172,7 @@
             this.btnptmember.Location = new System.Drawing.Point(12, 363);
             this.btnptmember.Name = "btnptmember";
             this.btnptmember.Size = new System.Drawing.Size(199, 49);
-            this.btnptmember.TabIndex = 22;
+            this.btnptmember.TabIndex = 4;
             this.btnptmember.Text = "PTメンバー編集";
             this.btnptmember.UseVisualStyleBackColor = true;
             this.btnptmember.Click += new System.EventHandler(this.btnptmember_Click);
@@ -238,7 +238,7 @@
             this.btnCalcTotalTime.Location = new System.Drawing.Point(361, 45);
             this.btnCalcTotalTime.Name = "btnCalcTotalTime";
             this.btnCalcTotalTime.Size = new System.Drawing.Size(121, 30);
-            this.btnCalcTotalTime.TabIndex = 29;
+            this.btnCalcTotalTime.TabIndex = 17;
             this.btnCalcTotalTime.Text = "累計攻略時間計算";
             this.btnCalcTotalTime.UseVisualStyleBackColor = true;
             this.btnCalcTotalTime.Click += new System.EventHandler(this.btnCalcTotalTime_Click);
@@ -259,7 +259,7 @@
             this.txtNextPhase.Location = new System.Drawing.Point(206, 288);
             this.txtNextPhase.Name = "txtNextPhase";
             this.txtNextPhase.Size = new System.Drawing.Size(289, 29);
-            this.txtNextPhase.TabIndex = 28;
+            this.txtNextPhase.TabIndex = 10;
             this.txtNextPhase.Text = "クリア目的！";
             // 
             // lblSelectedId
@@ -287,7 +287,7 @@
             this.txtEndTime.Mask = "00:00";
             this.txtEndTime.Name = "txtEndTime";
             this.txtEndTime.Size = new System.Drawing.Size(83, 29);
-            this.txtEndTime.TabIndex = 24;
+            this.txtEndTime.TabIndex = 6;
             this.txtEndTime.TextChanged += new System.EventHandler(this.OnTimeChanged);
             // 
             // txtStartTime
@@ -297,7 +297,7 @@
             this.txtStartTime.Mask = "00:00";
             this.txtStartTime.Name = "txtStartTime";
             this.txtStartTime.Size = new System.Drawing.Size(83, 29);
-            this.txtStartTime.TabIndex = 23;
+            this.txtStartTime.TabIndex = 5;
             this.txtStartTime.TextChanged += new System.EventHandler(this.OnTimeChanged);
             // 
             // lblOther
@@ -316,7 +316,7 @@
             this.txtOther.Location = new System.Drawing.Point(206, 636);
             this.txtOther.Name = "txtOther";
             this.txtOther.Size = new System.Drawing.Size(412, 29);
-            this.txtOther.TabIndex = 32;
+            this.txtOther.TabIndex = 14;
             this.txtOther.Text = "23:00";
             // 
             // lblFflogs
@@ -335,7 +335,7 @@
             this.txtFflogs.Location = new System.Drawing.Point(206, 601);
             this.txtFflogs.Name = "txtFflogs";
             this.txtFflogs.Size = new System.Drawing.Size(412, 29);
-            this.txtFflogs.TabIndex = 31;
+            this.txtFflogs.TabIndex = 13;
             this.txtFflogs.Text = "hugahuga";
             // 
             // lblYoutube
@@ -354,7 +354,7 @@
             this.txtYoutube.Location = new System.Drawing.Point(206, 566);
             this.txtYoutube.Name = "txtYoutube";
             this.txtYoutube.Size = new System.Drawing.Size(412, 29);
-            this.txtYoutube.TabIndex = 30;
+            this.txtYoutube.TabIndex = 12;
             this.txtYoutube.Text = "hogehoge.youtube.com";
             // 
             // labelPtList
@@ -384,7 +384,7 @@
             this.txtMemo.Multiline = true;
             this.txtMemo.Name = "txtMemo";
             this.txtMemo.Size = new System.Drawing.Size(957, 154);
-            this.txtMemo.TabIndex = 29;
+            this.txtMemo.TabIndex = 11;
             this.txtMemo.Text = "予定より早くギミックをパスすることができた。";
             // 
             // lblNextPhase
@@ -436,7 +436,7 @@
             this.cmbPhaseDetail.Location = new System.Drawing.Point(206, 242);
             this.cmbPhaseDetail.Name = "cmbPhaseDetail";
             this.cmbPhaseDetail.Size = new System.Drawing.Size(289, 29);
-            this.cmbPhaseDetail.TabIndex = 8;
+            this.cmbPhaseDetail.TabIndex = 9;
             // 
             // cmbPhase
             // 
@@ -447,7 +447,7 @@
             this.cmbPhase.Location = new System.Drawing.Point(206, 195);
             this.cmbPhase.Name = "cmbPhase";
             this.cmbPhase.Size = new System.Drawing.Size(289, 29);
-            this.cmbPhase.TabIndex = 7;
+            this.cmbPhase.TabIndex = 8;
             this.cmbPhase.SelectedIndexChanged += new System.EventHandler(this.cmbPhase_SelectedIndexChanged);
             // 
             // cmbContent
@@ -459,7 +459,7 @@
             this.cmbContent.Location = new System.Drawing.Point(206, 143);
             this.cmbContent.Name = "cmbContent";
             this.cmbContent.Size = new System.Drawing.Size(289, 29);
-            this.cmbContent.TabIndex = 6;
+            this.cmbContent.TabIndex = 7;
             this.cmbContent.SelectedIndexChanged += new System.EventHandler(this.cmbContent_SelectedIndexChanged);
             // 
             // lblEndTime
@@ -505,7 +505,7 @@
             this.listView1.Location = new System.Drawing.Point(501, 42);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(477, 348);
-            this.listView1.TabIndex = 0;
+            this.listView1.TabIndex = 15;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 

@@ -70,8 +70,8 @@ namespace RaidLog
                           "・絶オメガ検証戦 対応版リリース！\n" +
                           "・活動時間の自動計算機能を追加\n" +
                           "・竜詩、エデンを随時作成中\n" +
-                          "【1.0.0.2更新情報】\n" +
-                          "・ウインドウ出現位置を調整しました。";
+                          "【1.0.0.3更新情報】\n" +
+                          "・タブキーでの移動の動きを修正しました。";
 
             MessageBox.Show(info, $"バージョン {version} の詳細", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

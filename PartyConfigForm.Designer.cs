@@ -57,7 +57,7 @@
             this.btnBack.Location = new System.Drawing.Point(12, 549);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(103, 26);
-            this.btnBack.TabIndex = 31;
+            this.btnBack.TabIndex = 9;
             this.btnBack.Text = "戻る";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -78,7 +78,7 @@
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(594, 550);
             this.listView1.SmallImageList = this.imageList1;
-            this.listView1.TabIndex = 32;
+            this.listView1.TabIndex = 8;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
@@ -120,7 +120,7 @@
             this.btnExecute.Location = new System.Drawing.Point(73, 427);
             this.btnExecute.Name = "btnExecute";
             this.btnExecute.Size = new System.Drawing.Size(284, 38);
-            this.btnExecute.TabIndex = 42;
+            this.btnExecute.TabIndex = 6;
             this.btnExecute.Text = "PTリストの更新、追加";
             this.btnExecute.UseVisualStyleBackColor = true;
             this.btnExecute.Click += new System.EventHandler(this.btnExecute_Click);
@@ -141,13 +141,13 @@
             this.txtCharacterName.Location = new System.Drawing.Point(12, 296);
             this.txtCharacterName.Name = "txtCharacterName";
             this.txtCharacterName.Size = new System.Drawing.Size(412, 29);
-            this.txtCharacterName.TabIndex = 47;
+            this.txtCharacterName.TabIndex = 4;
             // 
             // lblJobName
             // 
             this.lblJobName.AutoSize = true;
             this.lblJobName.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblJobName.Location = new System.Drawing.Point(12, 196);
+            this.lblJobName.Location = new System.Drawing.Point(12, 119);
             this.lblJobName.Name = "lblJobName";
             this.lblJobName.Size = new System.Drawing.Size(59, 22);
             this.lblJobName.TabIndex = 46;
@@ -157,7 +157,7 @@
             // 
             this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblRole.Location = new System.Drawing.Point(12, 125);
+            this.lblRole.Location = new System.Drawing.Point(12, 189);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(151, 22);
             this.lblRole.TabIndex = 44;
@@ -166,10 +166,10 @@
             // txtRole
             // 
             this.txtRole.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtRole.Location = new System.Drawing.Point(16, 150);
+            this.txtRole.Location = new System.Drawing.Point(12, 214);
             this.txtRole.Name = "txtRole";
             this.txtRole.Size = new System.Drawing.Size(412, 29);
-            this.txtRole.TabIndex = 43;
+            this.txtRole.TabIndex = 3;
             // 
             // rdoDelete
             // 
@@ -178,7 +178,7 @@
             this.rdoDelete.Location = new System.Drawing.Point(199, 25);
             this.rdoDelete.Name = "rdoDelete";
             this.rdoDelete.Size = new System.Drawing.Size(72, 26);
-            this.rdoDelete.TabIndex = 50;
+            this.rdoDelete.TabIndex = 1;
             this.rdoDelete.TabStop = true;
             this.rdoDelete.Text = "削除";
             this.rdoDelete.UseVisualStyleBackColor = true;
@@ -190,7 +190,7 @@
             this.rdoRegist.Location = new System.Drawing.Point(23, 25);
             this.rdoRegist.Name = "rdoRegist";
             this.rdoRegist.Size = new System.Drawing.Size(127, 26);
-            this.rdoRegist.TabIndex = 49;
+            this.rdoRegist.TabIndex = 0;
             this.rdoRegist.TabStop = true;
             this.rdoRegist.Text = "登録・編集";
             this.rdoRegist.UseVisualStyleBackColor = true;
@@ -200,10 +200,10 @@
             this.cmbJobName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbJobName.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmbJobName.FormattingEnabled = true;
-            this.cmbJobName.Location = new System.Drawing.Point(12, 221);
+            this.cmbJobName.Location = new System.Drawing.Point(12, 144);
             this.cmbJobName.Name = "cmbJobName";
             this.cmbJobName.Size = new System.Drawing.Size(416, 29);
-            this.cmbJobName.TabIndex = 51;
+            this.cmbJobName.TabIndex = 2;
             this.cmbJobName.SelectedIndexChanged += new System.EventHandler(this.cmbJobName_SelectedIndexChanged);
             // 
             // lblMemo
@@ -222,7 +222,7 @@
             this.txtMemo.Location = new System.Drawing.Point(16, 378);
             this.txtMemo.Name = "txtMemo";
             this.txtMemo.Size = new System.Drawing.Size(412, 29);
-            this.txtMemo.TabIndex = 52;
+            this.txtMemo.TabIndex = 5;
             // 
             // lblSelectedId
             // 
@@ -240,7 +240,7 @@
             this.btnSave.Location = new System.Drawing.Point(99, 486);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(215, 38);
-            this.btnSave.TabIndex = 55;
+            this.btnSave.TabIndex = 7;
             this.btnSave.Text = "登録（PT確定）";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
