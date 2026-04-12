@@ -36,6 +36,7 @@
             this.btnRegister = new System.Windows.Forms.Button();
             this.buttoncloseapp = new System.Windows.Forms.Button();
             this.lblVer = new System.Windows.Forms.Label();
+            this.btnUpdateInfo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ユーザーID
@@ -109,12 +110,23 @@
             this.lblVer.TabIndex = 5;
             this.lblVer.Text = "ver1.0.0";
             // 
+            // btnUpdateInfo
+            // 
+            this.btnUpdateInfo.Location = new System.Drawing.Point(222, 219);
+            this.btnUpdateInfo.Name = "btnUpdateInfo";
+            this.btnUpdateInfo.Size = new System.Drawing.Size(100, 18);
+            this.btnUpdateInfo.TabIndex = 6;
+            this.btnUpdateInfo.Text = "バージョン情報";
+            this.btnUpdateInfo.UseVisualStyleBackColor = true;
+            this.btnUpdateInfo.Click += new System.EventHandler(this.btnUpdateInfo_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 261);
             this.ControlBox = false;
+            this.Controls.Add(this.btnUpdateInfo);
             this.Controls.Add(this.lblVer);
             this.Controls.Add(this.buttoncloseapp);
             this.Controls.Add(this.btnRegister);
@@ -124,6 +136,7 @@
             this.Controls.Add(this.パスワード);
             this.Controls.Add(this.ユーザーID);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "固定活動記録アプリ";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
@@ -141,6 +154,7 @@
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button buttoncloseapp;
         private System.Windows.Forms.Label lblVer;
+        private System.Windows.Forms.Button btnUpdateInfo;
     }
 }
 

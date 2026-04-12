@@ -202,6 +202,7 @@
             this.Controls.Add(this.rdoRegist);
             this.Controls.Add(this.treeContent);
             this.Name = "ContentMgmtForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "コンテンツ管理画面";
             this.Load += new System.EventHandler(this.ContentMgmtForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numDisplayOrder)).EndInit();

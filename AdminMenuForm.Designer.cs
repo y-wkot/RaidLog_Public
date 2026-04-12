@@ -75,6 +75,7 @@
             this.Controls.Add(this.btnJobMgmt);
             this.Controls.Add(this.btnContentMgmt);
             this.Name = "AdminMenuForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "管理者用画面";
             this.ResumeLayout(false);
 

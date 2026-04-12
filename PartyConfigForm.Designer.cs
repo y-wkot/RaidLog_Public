@@ -267,6 +267,7 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnBack);
             this.Name = "PartyConfigForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "パーティ編成";
             this.Load += new System.EventHandler(this.PartyConfigForm_Load);
             this.ResumeLayout(false);
