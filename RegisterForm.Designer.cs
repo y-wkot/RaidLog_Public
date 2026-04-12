@@ -112,6 +112,7 @@
             this.Controls.Add(this.ユーザーID);
             this.Controls.Add(this.Register);
             this.Name = "RegisterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "新規登録";
             this.ResumeLayout(false);
             this.PerformLayout();

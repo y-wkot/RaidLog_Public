@@ -186,6 +186,7 @@
             this.Controls.Add(this.rdoRegist);
             this.Controls.Add(this.dataGridView1);
             this.Name = "JobMgmtForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ジョブ管理画面";
             this.Load += new System.EventHandler(this.JobMgmtForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -62,17 +62,25 @@ namespace RaidLog
         // バージョン更新したら
         private void btnUpdateInfo_Click(object sender, EventArgs e)
         {
-            string version = "1.0.0";
-            string info = "【更新情報】\n" +
+            // アプリ自身のバージョン情報を自動取得
+            string version = Application.ProductVersion;
+
+            // 内容をとりあえずここに・・・
+            string info = "【1.0.0.0更新情報】\n" +
                           "・絶オメガ検証戦 対応版リリース！\n" +
                           "・活動時間の自動計算機能を追加\n" +
-                          "・竜詩、エデンを随時作成中";
+                          "・竜詩、エデンを随時作成中\n" +
+                          "【1.0.0.1更新情報】\n" +
+                          "・ウインドウ出現位置を調整しました。";
 
             MessageBox.Show(info, $"バージョン {version} の詳細", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private async void LoginForm_Load(object sender, EventArgs e)
         {
+            // ラベルに現在のバージョンを表示
+            lblVer.Text = "ver" + Application.ProductVersion;
+
             // 通信設定
             System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
 
@@ -88,6 +96,7 @@ namespace RaidLog
 
             // エンターでログインボタンを反応させる
             this.AcceptButton = btnLogin;
+
         }
 
         private void btnRegister_Click(object sender, EventArgs e)

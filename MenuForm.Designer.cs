@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "MT",
             "ピクトマンサー",
             "Hugahugahuga Hogeogegoge",
@@ -45,6 +45,8 @@
             this.groupcontents = new System.Windows.Forms.GroupBox();
             this.lblContentstotal = new System.Windows.Forms.Label();
             this.groupmain = new System.Windows.Forms.GroupBox();
+            this.btnCalcTotalTime = new System.Windows.Forms.Button();
+            this.lblTotalTime = new System.Windows.Forms.Label();
             this.txtNextPhase = new System.Windows.Forms.TextBox();
             this.lblSelectedId = new System.Windows.Forms.Label();
             this.lblNextDay = new System.Windows.Forms.Label();
@@ -69,13 +71,11 @@
             this.lblEndTime = new System.Windows.Forms.Label();
             this.lblStartTime = new System.Windows.Forms.Label();
             this.lblSelectedDate = new System.Windows.Forms.Label();
-            this.lblTotalTime = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.btnCalcTotalTime = new System.Windows.Forms.Button();
             this.groupmain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -231,6 +231,27 @@
             this.groupmain.TabIndex = 12;
             this.groupmain.TabStop = false;
             this.groupmain.Text = "攻略詳細";
+            // 
+            // btnCalcTotalTime
+            // 
+            this.btnCalcTotalTime.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnCalcTotalTime.Location = new System.Drawing.Point(361, 45);
+            this.btnCalcTotalTime.Name = "btnCalcTotalTime";
+            this.btnCalcTotalTime.Size = new System.Drawing.Size(121, 30);
+            this.btnCalcTotalTime.TabIndex = 29;
+            this.btnCalcTotalTime.Text = "累計攻略時間計算";
+            this.btnCalcTotalTime.UseVisualStyleBackColor = true;
+            this.btnCalcTotalTime.Click += new System.EventHandler(this.btnCalcTotalTime_Click);
+            // 
+            // lblTotalTime
+            // 
+            this.lblTotalTime.AutoSize = true;
+            this.lblTotalTime.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lblTotalTime.Location = new System.Drawing.Point(247, 17);
+            this.lblTotalTime.Name = "lblTotalTime";
+            this.lblTotalTime.Size = new System.Drawing.Size(235, 22);
+            this.lblTotalTime.TabIndex = 28;
+            this.lblTotalTime.Text = "現在：0回と00時間00分";
             // 
             // txtNextPhase
             // 
@@ -471,15 +492,22 @@
             this.lblSelectedDate.TabIndex = 1;
             this.lblSelectedDate.Text = "yyyy年mm月dd日";
             // 
-            // lblTotalTime
+            // listView1
             // 
-            this.lblTotalTime.AutoSize = true;
-            this.lblTotalTime.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblTotalTime.Location = new System.Drawing.Point(247, 17);
-            this.lblTotalTime.Name = "lblTotalTime";
-            this.lblTotalTime.Size = new System.Drawing.Size(235, 22);
-            this.lblTotalTime.TabIndex = 28;
-            this.lblTotalTime.Text = "現在：0回と00時間00分";
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView1.HideSelection = false;
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.listView1.Location = new System.Drawing.Point(501, 42);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(477, 348);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -501,34 +529,6 @@
             this.columnHeader4.Text = "メモ";
             this.columnHeader4.Width = 113;
             // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.listView1.HideSelection = false;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5});
-            this.listView1.Location = new System.Drawing.Point(501, 42);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(477, 348);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // btnCalcTotalTime
-            // 
-            this.btnCalcTotalTime.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnCalcTotalTime.Location = new System.Drawing.Point(361, 45);
-            this.btnCalcTotalTime.Name = "btnCalcTotalTime";
-            this.btnCalcTotalTime.Size = new System.Drawing.Size(121, 30);
-            this.btnCalcTotalTime.TabIndex = 29;
-            this.btnCalcTotalTime.Text = "累計攻略時間計算";
-            this.btnCalcTotalTime.UseVisualStyleBackColor = true;
-            this.btnCalcTotalTime.Click += new System.EventHandler(this.btnCalcTotalTime_Click);
-            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -547,6 +547,7 @@
             this.Controls.Add(this.rdoRegist);
             this.Controls.Add(this.calendarLog);
             this.Name = "MenuForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "マイページ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuForm_FormClosing);
             this.Load += new System.EventHandler(this.MenuForm_Load);
