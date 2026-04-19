@@ -104,6 +104,7 @@ namespace RaidLog
 
                 // フェーズ初期化
                 cmbPhase.DataSource = null;
+
             }
             catch (Exception ex)
             {
@@ -114,6 +115,11 @@ namespace RaidLog
         private void ResetForm(bool fullClear = true)
         {
             lblSelectedId.Text = "";
+
+            if (lblTotalTime != null)
+            {
+                lblTotalTime.Text = "現在：0回と0時間0分";
+            }
 
             if (fullClear)
             {
@@ -134,10 +140,6 @@ namespace RaidLog
 
                 lblNextDay.Text = "";
 
-                if (lblTotalTime != null)
-                {
-                    lblTotalTime.Text = "現在：0回と0時間0分";
-                }
             }
         }
         #endregion
@@ -554,6 +556,7 @@ namespace RaidLog
             }
         }
 
+        // 選択日より過去の日付までの、選択したコンテンツ名の累計攻略時間を出力する
         private async void btnCalcTotalTime_Click(object sender, EventArgs e)
         {
             try
@@ -563,6 +566,9 @@ namespace RaidLog
                 {
                     return;
                 }
+
+                // カレンダーの選択日を取得
+                DateTime selectedDate = calendarLog.SelectionStart.Date;
 
                 // コンボボックスで選択されているコンテンツ名を取得
                 string selectedContent = cmbContent.SelectedItem?
@@ -583,7 +589,7 @@ namespace RaidLog
                     .Get();
 
                 var logs = result.Models
-                    .Where(x => x.ContentName == selectedContent)
+                    .Where(x => x.ContentName == selectedContent && x.PlayDate.Date < selectedDate)
                     .ToList();
 
                 // 過去に攻略データが無い場合

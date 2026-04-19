@@ -182,6 +182,7 @@
             this.rdoDelete.TabStop = true;
             this.rdoDelete.Text = "削除";
             this.rdoDelete.UseVisualStyleBackColor = true;
+            this.rdoDelete.CheckedChanged += new System.EventHandler(this.rdoDelete_CheckedChanged);
             // 
             // rdoRegist
             // 
@@ -194,6 +195,7 @@
             this.rdoRegist.TabStop = true;
             this.rdoRegist.Text = "登録・編集";
             this.rdoRegist.UseVisualStyleBackColor = true;
+            this.rdoRegist.CheckedChanged += new System.EventHandler(this.rdoRegist_CheckedChanged);
             // 
             // cmbJobName
             // 

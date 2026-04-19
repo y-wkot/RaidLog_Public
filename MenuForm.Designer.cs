@@ -361,7 +361,7 @@
             // 
             this.labelPtList.AutoSize = true;
             this.labelPtList.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelPtList.Location = new System.Drawing.Point(497, 17);
+            this.labelPtList.Location = new System.Drawing.Point(859, 17);
             this.labelPtList.Name = "labelPtList";
             this.labelPtList.Size = new System.Drawing.Size(111, 22);
             this.labelPtList.TabIndex = 16;

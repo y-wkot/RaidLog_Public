@@ -141,13 +141,41 @@ namespace RaidLog
         // 反映ボタン：この画面のリスト内容を _playLog に書き戻して閉じる
         private void btnExecute_Click(object sender, EventArgs e)
         {
-
             if (listView1.SelectedItems.Count == 0)
             {
                 MessageBox.Show("行を選択してください");
                 return;
             }
 
+            // 選択行を取得
+            ListViewItem selectedRow = listView1.SelectedItems[0];
+
+            // 削除モードの場合
+            if (currentMode == ProcMode.Delete)
+            {
+                // 確認ダイアログ
+                var confirm = MessageBox.Show($"{selectedRow.Text}のデータを削除しますか？", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (confirm == DialogResult.Yes)
+                {
+                    // 編集画面では実際に登録される前なので、空文字で消えてる感じに見せる
+                    selectedRow.SubItems[1].Text = "";
+                    selectedRow.SubItems[2].Text = "";
+                    selectedRow.SubItems[3].Text = "";
+                    if (selectedRow.SubItems.Count > 4)
+                    {
+                        selectedRow.SubItems[4].Text = ""; // Memoは必須じゃないため
+                    }
+
+                    // 入力欄リセット
+                    txtRole.Clear();
+                    cmbJobName.SelectedIndex = -1;
+                    txtCharacterName.Clear();
+                    txtMemo.Clear();
+                }
+                return;
+            }
+
+            // 登録・編集
             // 必須項目（ロール、ジョブ、キャラ名）の未入力チェック
             if (string.IsNullOrWhiteSpace(txtRole.Text) ||
                 string.IsNullOrWhiteSpace(cmbJobName.Text) ||
@@ -157,8 +185,6 @@ namespace RaidLog
                 return;
             }
 
-            // 選択行を取得
-            ListViewItem selectedRow = listView1.SelectedItems[0];
 
             // 入力内容をリストに反映
             selectedRow.SubItems[1].Text = txtRole.Text;
@@ -194,6 +220,38 @@ namespace RaidLog
             catch (Exception ex)
             {
                 MessageBox.Show("処理中にエラーが発生しました。：" + ex.Message);
+            }
+        }
+
+        // 登録・編集ラジオボタン選択
+        private void rdoRegist_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoRegist.Checked)
+            {
+                currentMode = ProcMode.Regist;
+                btnExecute.Text = "リストに反映";
+                btnExecute.BackColor = SystemColors.Control;
+
+                txtRole.Enabled = true;
+                cmbJobName.Enabled = true;
+                txtCharacterName.Enabled = true;
+                txtMemo.Enabled = true;
+            }
+        }
+
+        // 削除ラジオボタン選択
+        private void rdoDelete_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoDelete.Checked)
+            {
+                currentMode = ProcMode.Delete;
+                btnExecute.Text = "PTメンバーから除名";
+                btnExecute.BackColor = Color.MistyRose;
+
+                txtRole.Enabled = false;
+                cmbJobName.Enabled = false;
+                txtCharacterName.Enabled = false;
+                txtMemo.Enabled = false;
             }
         }
     }
